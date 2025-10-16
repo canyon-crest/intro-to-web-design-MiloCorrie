@@ -1,1 +1,82 @@
-
+body{
+    background-color: rgb(212, 184, 226);
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container{
+    width: 800px;
+    margin: 0px auto;
+    background-color: rgb(223, 204, 236);
+    border: #000000, solid, 1px;
+    padding: 10px;
+}
+h1{
+    background-color: rgb(255, 102, 0);
+    border: #000000, solid, 1px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+}
+h2{
+    text-align: left;
+    font-size: 1em;
+    /* font-style: normal; */
+}
+h3{
+    border-left: double 1px #000000;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+p{
+    line-height: 2.2em;
+}
+img{
+    float: left;
+    width: 100px;
+    border: #000000 solid 1px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+/* link order needs to be link, visited, hover, then active */
+a:link{
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: rgb(66, 22, 107);
+}
+a:hover{
+    color: rgb(172, 213, 213);
+    text-decoration: underline;
+    font-weight: bold;
+}
+a:active{
+    color: aqua;
+}
+#SIoO{
+    border: none;
+    width: 200px;
+}
+h3:hover{
+    border-color: aqua;
+}
+#UoL{
+    float: right;
+    margin-right: 0;
+    margin-left: 5px;
+}
+#MTAC{
+    border: none;
+}
+/* class rule */
+.highlight{
+    font-weight: bold;
+    background-color: antiquewhite;
+    padding: 2px;
+    color: #000000;
+    border-radius: 5px;
+}
