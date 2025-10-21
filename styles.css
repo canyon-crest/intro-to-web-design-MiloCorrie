@@ -21,7 +21,7 @@ h1{
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 15px;
-    width: 50%;
+    width: 200px;
     text-align: center;
     margin: 0px auto;
 }
@@ -144,6 +144,8 @@ h3:hover{
     #container p, h3{
         margin: 0;
         padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
         border: none;
     }
     p{
@@ -160,6 +162,8 @@ h3:hover{
     #container p, h3{
         margin: 0;
         padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
         border: none;
     }
     
@@ -264,9 +268,3 @@ h1:hover .char{
 #container, body {
     overflow: visible;
 }
-
-
-
-
-
-/* Third Above and Beyond Feature, dark mode toggle, source is AI */
