@@ -219,14 +219,13 @@ h1:hover .char{
 /* Second Above and Beyond Feature, enlarging images for easier viewing upon holding, source is AI */
 /* Make the wrapper non-intrusive and allow the image to pop out */
 .thumb{
-    display: inline-block;
+    display: block;
     padding: 0;
     margin: 0;
     border: none;
     background: transparent;
     cursor: zoom-in;
-    position: relative; 
-    vertical-align: top; 
+    position: relative;
     float: left;
     padding-right: 10px;
 }
