@@ -107,12 +107,17 @@ h3:hover{
     border: 1px solid #5c1e31;
     margin: 10px;
     line-height: 2.2em;
-    padding: 25px;
+    padding: 0px;
 }
 
 #sidebar h3{
-    padding: 5px;
+    padding: 0px;
     width: 100px;
+}
+
+#sidebar p{
+    margin: 30px;
+    padding: 25px;
 }
 
 @media (max-width: 1200px){
@@ -167,4 +172,32 @@ h3:hover{
     p{
         text-align: justify;
     }
+}
+
+/* Falling letters animation for h1, source is AI */
+h1{
+    /* ...existing code... */
+    overflow: visible; /* allow off-screen start */
+}
+
+/* each letter must be wrapped in a span.char and get --i set */
+h1 .char{
+    display: inline-block;
+    transform: translateY(-220%) rotate(-8deg);
+    opacity: 0;
+    animation: fall 600ms cubic-bezier(.22,.9,.2,1) forwards;
+    animation-delay: calc(var(--i) * 0.08s);
+    will-change: transform, opacity;
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+}
+
+/* optional: replay on hover */
+h1:hover .char{
+    animation-name: fall;
 }
