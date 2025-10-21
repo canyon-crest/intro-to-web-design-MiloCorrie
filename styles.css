@@ -47,6 +47,7 @@ img{
     border: #000000 solid 1px;
     border-radius: 5px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* link order needs to be link, visited, hover, then active */
@@ -84,8 +85,6 @@ h3:hover{
 
 #UoL{
     float: right;
-    margin-right: 0;
-    margin-left: 5px;
 }
 
 #MTAC{
@@ -129,10 +128,7 @@ h3:hover{
 
 @media (max-width: 1200px){
     #container{
-        background-color: aqua;
         width: 800px;
-        padding: 0px;
-        padding-top: 10px;
     }
     p{
         text-align: justify;
@@ -141,7 +137,6 @@ h3:hover{
 
 @media (max-width: 992px){
     #container{
-        background-color: rgb(172, 232, 22);
         width: 100%;
         padding: 0px;
         padding-top: 10px;
@@ -158,7 +153,6 @@ h3:hover{
 
 @media (max-width: 768px){
     #container{
-        background-color: chocolate;
         width: 100%;
         padding: 0px;
         padding-top: 10px;
@@ -185,6 +179,10 @@ h3:hover{
         text-align: justify;
     }
 }
+
+
+
+
 
 /* First Above and Beyond Feature, falling letters animation for h1, source is AI */
 h1{
@@ -213,3 +211,63 @@ h1 .char{
 h1:hover .char{
     animation-name: fall;
 }
+
+
+
+
+
+/* Second Above and Beyond Feature, enlarging images for easier viewing upon holding, source is AI */
+/* Make the wrapper non-intrusive and allow the image to pop out */
+.thumb{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    cursor: zoom-in;
+    position: relative; 
+    vertical-align: top; 
+    float: left;
+    padding-right: 10px;
+}
+
+/* Base thumbnail behaviour */
+.thumb img{
+    display: block;
+    float: left; 
+    width: 300px; 
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    transform-origin: center center;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* Scale while the button is actively pressed (mouse button / touch held),
+   and also when the button receives keyboard focus for accessibility */
+.thumb:active img,
+.thumb:focus img {
+    position: fixed !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important; /* center exactly */
+    width: calc(68vw) !important;         /* full available width with gutter */
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    float: none !important;                        /* remove float when fixed */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6) !important;
+    z-index: 99999 !important;
+    cursor: zoom-out !important;
+    border-radius: 6px !important;
+}
+
+/* Ensure containers allow the scaled image to overflow */
+#container, body {
+    overflow: visible;
+}
+
+
+
+
+
+/* Third Above and Beyond Feature, dark mode toggle, source is AI */
