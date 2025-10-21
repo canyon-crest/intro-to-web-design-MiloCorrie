@@ -1,5 +1,5 @@
 body{
-    background-color: #EBEAEB;
+    background-color: #f6fdff;
     color: rgb(0, 0, 0);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -7,14 +7,17 @@ body{
 #container{
     width: 1000px;
     margin: 0px auto;
-    background-color: #ebcad8;
+    background-color: #d9ebf3;
     border: #000000, solid, 1px;
     padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 h1{
-    background-color: #afc272;
-    border: #727143, solid, 1px;
+    background-color: #0b2c47;
+    color: #ffffff;
+    border: #000000, solid, 1px;
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 15px;
@@ -25,13 +28,12 @@ h1{
 
 h2{
     text-align: center;
-    font-size: 1em;
-    /* font-style: normal; */
+    font-size: 1.5em;
 }
 
 h3{
-    border-left: double 1px #000000;
-    border-radius: 5px;
+    border-left: solid 5px #000000;
+    border-radius: 10px;
     padding-left: 5px;
 }
 
@@ -41,7 +43,7 @@ p{
 
 img{
     float: left;
-    width: 100px;
+    width: 300px;
     border: #000000 solid 1px;
     border-radius: 5px;
     margin-right: 10px;
@@ -50,34 +52,34 @@ img{
 /* link order needs to be link, visited, hover, then active */
 
 a:link{
-    color: blueviolet;
+    color: #4b2380;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:visited{
-    color: rgb(66, 22, 107);
+    color: rgb(15, 88, 85);
 }
 
 a:hover{
-    color: rgb(172, 213, 213);
+    color: #a37ed3;
     text-decoration: underline;
     font-weight: bold;
 }
 
 a:active{
-    color: aqua;
+    color: rgb(90, 161, 159);
 }
 
 #SIoO{
-    border: none;
-    width: 200px;
+    width: 400px;
 }
 
 /* probably use hover on something other than h3 */
 
 h3:hover{
-    border-color: aqua;
+    border-color: rgb(70, 70, 70);
+    color: rgb(70, 70, 70);
 }
 
 #UoL{
@@ -88,36 +90,41 @@ h3:hover{
 
 #MTAC{
     border: none;
+    width: 100px;
 }
 
 /* class rule */
 
 .highlight{
     font-weight: bold;
-    background-color: antiquewhite;
+    background-color: #0b2c47;
     padding: 2px;
-    color: #000000;
+    color: #ffffff;
     border-radius: 5px;
 }
 
 #sidebar{
-    background-color: #ac3b5f;
-    width: 225px;
+    background-color: #c8badd;
+    width: 150px;
+    height: auto;
     float: right;
-    border: 1px solid #5c1e31;
-    margin: 10px;
+    border: 1px solid #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
     line-height: 2.2em;
-    padding: 0px;
 }
 
 #sidebar h3{
-    padding: 0px;
-    width: 100px;
-}
-
-#sidebar p{
-    margin: 30px;
-    padding: 25px;
+    padding-right: 20px;
+    margin: 0px;
+    text-align: center;
+    border-left: none;
+    border-radius: 0px;
 }
 
 @media (max-width: 1200px){
@@ -125,6 +132,7 @@ h3:hover{
         background-color: aqua;
         width: 800px;
         padding: 0px;
+        padding-top: 10px;
     }
     p{
         text-align: justify;
@@ -136,6 +144,7 @@ h3:hover{
         background-color: rgb(172, 232, 22);
         width: 100%;
         padding: 0px;
+        padding-top: 10px;
     }
     #container p, h3{
         margin: 0;
@@ -152,6 +161,7 @@ h3:hover{
         background-color: chocolate;
         width: 100%;
         padding: 0px;
+        padding-top: 10px;
     }
     #container p, h3{
         margin: 0;
@@ -164,7 +174,9 @@ h3:hover{
     }
     img, #SIoO, #UoL{
         float: none;
-        width: 100%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     img, #MTAC{
         width: 50px;
@@ -174,7 +186,7 @@ h3:hover{
     }
 }
 
-/* Falling letters animation for h1, source is AI */
+/* First Above and Beyond Feature, falling letters animation for h1, source is AI */
 h1{
     /* ...existing code... */
     overflow: visible; /* allow off-screen start */
